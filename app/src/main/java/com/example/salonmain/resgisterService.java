@@ -50,7 +50,7 @@ public class resgisterService extends AppCompatActivity {
                 String duration = edtxtDuration.getText().toString();
                 double price = Double.parseDouble(edtxtPrice.getText().toString());
 
-                service_data DataService = new service_data(service, description, duration, price);
+                service_data DataService = new service_data(service, description, duration, price);//insert data
 
                 reference.child(service).setValue(DataService);
                 Toast.makeText(resgisterService.this, "Insert Data Success", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resgisterService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:paddingHorizontal="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:padding="15dp"
+            android:hint="Service Name"
+            android:id="@+id/edtxtServiceName"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:padding="15dp"
+            android:hint="Description"
+            android:id="@+id/edtxtDescription"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:padding="15dp"
+            android:hint="Duration"
+            android:id="@+id/edtxtDuration"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:padding="15dp"
+            android:hint="Price"
+            android:id="@+id/edtxtPrice"
+            android:layout_marginTop="15dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Save"
+            android:textColorHint="@color/white"
+            android:id="@+id/btnSaveService"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

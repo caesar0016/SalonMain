@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1084141603186",
+    "firebase_url": "https://salonstyle-c4401-default-rtdb.firebaseio.com",
+    "project_id": "salonstyle-c4401",
+    "storage_bucket": "salonstyle-c4401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084141603186:android:f66fcad70c9f73a1e5b5eb",
+        "android_client_info": {
+          "package_name": "com.example.salonmain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2cnr-wIUKyJlSZLsP8G_u6Oturj7K9dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

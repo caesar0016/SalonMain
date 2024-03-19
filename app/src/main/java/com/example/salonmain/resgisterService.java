@@ -43,7 +43,7 @@ public class resgisterService extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 database = FirebaseDatabase.getInstance();
-                reference = database.getReference("Test");
+                reference = database.getReference("Services");
 
                 String service = edtxtServiceName.getText().toString();
                 String description = edtxtDesc.getText().toString();

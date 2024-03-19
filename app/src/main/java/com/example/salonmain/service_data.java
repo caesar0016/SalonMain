@@ -1,35 +1,55 @@
 package com.example.salonmain;
 
-public class service_data {
-
+public class service_data { //this the data for getting and setting the service information
+    private String serviceID;
+    private String name;
+    private String description;
+    private String duration; // Assuming duration is in minutes
+    private double price; // Price attribute
     public service_data(){
 
     }
-    private String serviceName, Description, Duration;
-    private double price;
-
-    public String getServiceName() {
-        return serviceName;
+    @Override
+    public String toString() {
+        return "service_data{" +
+                "serviceID='" + serviceID + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", duration=" + duration +
+                ", price=" + price +
+                '}';
     }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
+    public String getServiceID() {
+        return serviceID;
+    }
+
+    public void setServiceID(String serviceID) {
+        this.serviceID = serviceID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public String getDuration() {
-        return Duration;
+        return duration;
     }
 
     public void setDuration(String duration) {
-        Duration = duration;
+        this.duration = duration;
     }
 
     public double getPrice() {
@@ -40,10 +60,12 @@ public class service_data {
         this.price = price;
     }
 
-    public service_data(String serviceName, String description, String duration, double price) {
-        this.serviceName = serviceName;
-        Description = description;
-        Duration = duration;
+    public service_data(String name, String description, String duration, double price) {
+        this.name = name;
+        this.description = description;
+        this.duration = duration;
         this.price = price;
     }
+
+
 }

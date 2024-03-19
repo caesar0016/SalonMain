@@ -15,6 +15,19 @@
         android:layout_marginTop="100dp"
         android:paddingHorizontal="50dp">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Log out"
+            android:textColorHint="@color/white"
+            android:id="@+id/btnLogout"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+
+            />
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,14 +66,14 @@
             android:layout_marginTop="40dp"
             android:id="@+id/tvForgotPass"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="or"
             android:textColor="#000000"
-            android:textSize="15dp"
-            android:layout_marginTop="100dp"
-            />
+            android:textSize="15dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -79,7 +92,7 @@
             android:hint="Login with Github"
             android:textColorHint="@color/white"
             android:id="@+id/btnGithub"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="5dp"
             android:backgroundTint="@color/black"
             />
         <Button
@@ -89,7 +102,7 @@
             android:hint="Login with Twitter"
             android:textColorHint="@color/white"
             android:id="@+id/btnTwitter"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="5dp"
             android:backgroundTint="@color/black"
             />
         <TextView
@@ -97,7 +110,7 @@
             android:layout_height="wrap_content"
             android:text="New User? Register Now"
             android:textColor="#3F51B5"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="5dp"
             android:id="@+id/tvRegisterUser"
             />
 

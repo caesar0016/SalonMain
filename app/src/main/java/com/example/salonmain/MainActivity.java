@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnLogin;
+    private Button btnLogin, btnAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnLogin = findViewById(R.id.btnLoginMain);
+        btnAccount = findViewById(R.id.btnAccount);
+
+        btnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, registerEmail.class);
+                startActivity(intent);
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

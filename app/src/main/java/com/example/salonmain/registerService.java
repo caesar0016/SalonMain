@@ -15,12 +15,12 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class resgisterService extends AppCompatActivity {
+public class registerService extends AppCompatActivity {
 
     EditText edtxtServiceName, edtxtDesc, edtxtDuration, edtxtPrice;
     Button btnSave;
     FirebaseDatabase database;
-    DatabaseReference reference;
+    DatabaseReference serviceDBRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,20 +42,18 @@ public class resgisterService extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                database = FirebaseDatabase.getInstance();
-                reference = database.getReference("Services");
+                serviceDBRef = FirebaseDatabase.getInstance().getReference().child("Services");
 
                 String service = edtxtServiceName.getText().toString();
                 String description = edtxtDesc.getText().toString();
                 String duration = edtxtDuration.getText().toString();
                 double price = Double.parseDouble(edtxtPrice.getText().toString());
 
-                service_data DataService = new service_data(service, description, duration, price);//insert data
+                service_data inputService = new service_data(service, description, duration, price);//insert data
 
-                reference.child(service).setValue(DataService);
-                Toast.makeText(resgisterService.this, "Insert Data Success", Toast.LENGTH_SHORT).show();
+                serviceDBRef.push().setValue(inputService);
+                Toast.makeText(registerService.this, "Insert Data Success", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

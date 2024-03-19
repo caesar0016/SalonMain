@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#514D4D">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Service Name"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/retrieveServiceName"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Description"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/retrieveDesc"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Duration"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/retrieveDuration"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Price"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/retrievePrice"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -11,12 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnLogin, btnAccount;
+    private Button btnLogin, btnAccount, btnMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, resgisterService.class);
+                Intent intent = new Intent(MainActivity.this, registerService.class);
                 startActivity(intent);
             }
         });
@@ -53,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, loginForm.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMain = findViewById(R.id.btnMainUi);
+
+        btnMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, practiceDesignMain.class);
                 startActivity(intent);
             }
         });

@@ -51,6 +51,12 @@
             android:text="Service Selection"
             android:id="@+id/btnServiceSelection"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:id="@+id/btnChat"
+            />
 
 
     </LinearLayout>

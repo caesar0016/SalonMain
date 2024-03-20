@@ -25,7 +25,7 @@ import java.util.List;
 
 public class practiceDesignMain extends AppCompatActivity {
 
-    private RecyclerView rvRetrieve;
+    private RecyclerView rvRetrieve, rvStaff;
     private TextView tvService, tvDesc, tvDuration, tvPrice;
     private DatabaseReference reference;
     private List<service_data> listOfService;
@@ -61,7 +61,6 @@ public class practiceDesignMain extends AppCompatActivity {
                 }
                 adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(practiceDesignMain.this, "Error Retrieving Data", Toast.LENGTH_SHORT).show();

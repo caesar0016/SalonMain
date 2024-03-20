@@ -1,6 +1,8 @@
 package com.example.salonmain;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,7 +46,7 @@ public class user_registration extends AppCompatActivity {
         edEmail = findViewById(R.id.edRegisterEmail);
         edPassword = findViewById(R.id.edRegisterPass);
         edConfirmPass = findViewById(R.id.edRegisterConfirmPass);
-        btnSave = findViewById(R.id.btnAccountSave);
+        btnSave = findViewById(R.id.btnAccountRegister);
         spinnerUserType = findViewById(R.id.spinnerUserType);
 
         refUserAccount = FirebaseDatabase.getInstance().getReference().child("Test");
@@ -66,8 +68,12 @@ public class user_registration extends AppCompatActivity {
         String Confirmpassword = edConfirmPass.getText().toString();
         String userType = spinnerUserType.getSelectedItem().toString();
 
-        refUserAccount = FirebaseDatabase.getInstance().getReference().child("Test");
+        if(TextUtils.isEmpty(name)){
+            Toast.makeText(this, "Please Fill all the fields", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
+        refUserAccount = FirebaseDatabase.getInstance().getReference().child("Test");
 
         userAccount_db inputAccount = new userAccount_db(name, username, email, password, userType);
 
@@ -75,6 +81,8 @@ public class user_registration extends AppCompatActivity {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(user_registration.this, "Success Data Insert", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(user_registration.this, loginForm.class);
+                startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

@@ -29,7 +29,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class loginForm extends AppCompatActivity {
 
     private EditText edtxtEmail, edtxtPassword;
-    Button btnLogin, btnLogout;
+    Button btnLogin;
     private TextView tvRegisterAccount;
 
     FirebaseAuth mAuth;
@@ -49,18 +49,10 @@ public class loginForm extends AppCompatActivity {
             edtxtPassword = findViewById(R.id.edtxtPassswordLogin);
             btnLogin = findViewById(R.id.btnLogin);
             tvRegisterAccount = findViewById(R.id.tvRegisterUser);
-            btnLogout = findViewById(R.id.btnLogout);
-            btnLogout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    FirebaseAuth.getInstance().signOut();
-                    Toast.makeText(loginForm.this, "Logout Success", Toast.LENGTH_SHORT).show();
-                }
-            });
             tvRegisterAccount.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(loginForm.this, registerEmail.class);
+                    Intent intent = new Intent(loginForm.this, user_registration.class);
                     startActivity(intent);
                 }
             });
@@ -82,8 +74,6 @@ public class loginForm extends AppCompatActivity {
                     }
                 }
             });
-
-
     }
 
     void verifyLogin(String email, String password) {

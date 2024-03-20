@@ -13,4 +13,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/rvService"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvStaff"
+        android:layout_below="@+id/rvService"
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>

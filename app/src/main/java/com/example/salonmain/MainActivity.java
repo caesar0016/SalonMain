@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, registerEmail.class);
+                Intent intent = new Intent(MainActivity.this, user_registration.class);
                 startActivity(intent);
             }
         });

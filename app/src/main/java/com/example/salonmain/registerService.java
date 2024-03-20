@@ -19,7 +19,7 @@ public class registerService extends AppCompatActivity {
 
     EditText edtxtServiceName, edtxtDesc, edtxtDuration, edtxtPrice;
     Button btnSave;
-    FirebaseDatabase database;
+    //FirebaseDatabase database;
     DatabaseReference serviceDBRef;
 
     @Override

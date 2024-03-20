@@ -43,7 +43,8 @@ public class practiceDesignMain extends AppCompatActivity {
         });
 
         rvRetrieve = findViewById(R.id.rvService);
-        rvRetrieve.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rvRetrieve.setLayoutManager(layoutManager);
         listOfService = new ArrayList<>();
         adapter = new serviceAdapter(this, listOfService);
         rvRetrieve.setAdapter(adapter);

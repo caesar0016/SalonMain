@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SalonMain"
         tools:targetApi="31">
         <activity
+            android:name=".user_registration"
+            android:exported="false" />
+        <activity
             android:name=".practiceDesignMain"
             android:exported="false" />
         <activity

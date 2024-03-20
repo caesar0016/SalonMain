@@ -75,23 +75,14 @@
             android:textColor="#000000"
             android:textSize="15dp" />
 
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:hint="Login with Gmail"
+            android:hint="Login with Twitter"
             android:textColorHint="@color/white"
-            android:id="@+id/btnGmail"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="@color/black"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:hint="Login with Github"
-            android:textColorHint="@color/white"
-            android:id="@+id/btnGithub"
+            android:id="@+id/btnTwitter"
             android:layout_marginTop="5dp"
             android:backgroundTint="@color/black"
             />
@@ -101,7 +92,7 @@
             android:padding="15dp"
             android:hint="Login with Twitter"
             android:textColorHint="@color/white"
-            android:id="@+id/btnTwitter"
+            android:id="@+id/btnAuthen"
             android:layout_marginTop="5dp"
             android:backgroundTint="@color/black"
             />

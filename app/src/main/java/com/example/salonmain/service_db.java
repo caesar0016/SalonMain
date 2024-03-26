@@ -1,17 +1,17 @@
 package com.example.salonmain;
 
-public class service_data { //this the data for getting and setting the service information
+public class service_db { //this the data for getting and setting the service information
     private String serviceID;
     private String name;
     private String description;
     private String duration; // Assuming duration is in minutes
     private double price; // Price attribute
-    public service_data(){
+    public service_db(){
 
     }
     @Override
     public String toString() {
-        return "service_data{" +
+        return "service_db{" +
                 "serviceID='" + serviceID + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
@@ -60,7 +60,7 @@ public class service_data { //this the data for getting and setting the service 
         this.price = price;
     }
 
-    public service_data(String name, String description, String duration, double price) {
+    public service_db(String name, String description, String duration, double price) {
         this.name = name;
         this.description = description;
         this.duration = duration;

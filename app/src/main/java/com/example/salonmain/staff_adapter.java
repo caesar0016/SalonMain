@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class staff_adapter extends RecyclerView.Adapter<staff_adapter.ViewHolder>{
-
-    private List<userAccount_db> userList;
     private Context context;
+    private List<userAccount_db> userList;
+
     public staff_adapter(Context context, List<userAccount_db> userList) {
         this.userList = userList;
     }

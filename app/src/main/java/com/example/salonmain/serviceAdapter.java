@@ -15,9 +15,9 @@ public class serviceAdapter extends RecyclerView.Adapter<serviceAdapter.ViewHold
 
     Context context;
 
-    private List<service_data> listService;
+    private List<service_db> listService;
 
-    public serviceAdapter(Context context, List<service_data> listService) {
+    public serviceAdapter(Context context, List<service_db> listService) {
 
         this.listService = listService;
     }
@@ -31,7 +31,7 @@ public class serviceAdapter extends RecyclerView.Adapter<serviceAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        service_data s1 = listService.get(position);
+        service_db s1 = listService.get(position);
 
         double price = s1.getPrice();
         String priceString = String.valueOf(price);
